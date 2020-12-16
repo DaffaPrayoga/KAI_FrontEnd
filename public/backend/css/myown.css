@@ -1,0 +1,32 @@
+table.dataTable tbody td, table.dataTable thead th {
+    padding: 5px 8px !important;
+}
+
+.panel_loading {
+    width: -webkit-calc(100% - 15px);
+    width: -moz-calc(100% - 15px);
+    width: calc(100% - 15px);
+    height: -webkit-calc(100% - 5px);
+    height: -moz-calc(100% - 5px);
+    height: calc(100% - 5px);
+    position: absolute;
+    background: rgba(200, 200, 200, 0.8) !important;
+    z-index: 100;
+    text-align: center;
+}
+
+.small_box_chart_indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #0b97c4;
+    vertical-align: middle;
+}
+
+.big_text_style {
+    font-size: 30px !important;
+}
+
+.width-manage {
+    width: 200px !important;
+}
