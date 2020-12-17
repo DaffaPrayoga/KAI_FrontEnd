@@ -1910,13 +1910,13 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 
 .arc-line {
-    width: 2000px;
+    width: 135vw;
     height: 2000px;
     border-radius: 1000px;
     border: 1px solid #ddd;
     position: absolute;
     top: -1390px;
-    left: -150px;
+    left: -10vw;
     z-index: -1;
 }
 
