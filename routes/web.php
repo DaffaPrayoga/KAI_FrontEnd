@@ -22,6 +22,9 @@ Route::get('/org_chart', function () {
 Route::get('/family_tree', function () {
     return view('family_tree');
 });
+Route::get('/9_box', function () {
+    return view('9_box');
+});
 Route::get('/profile', function () {
     return view('employee_profile');
 });

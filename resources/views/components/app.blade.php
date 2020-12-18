@@ -99,46 +99,45 @@
     </nav>
 </div>
 <ul id="slide-out" class="side-nav fixed z-depth-0" style="width: 250px">
-    <li style="padding-top: 25px;padding-bottom: 20px;"><a href="#!user"><img style="height: 35px;"
-                                                                              src="{{asset('img/logo.svg')}}"></a></li>
+    <li style="padding-top: 25px;padding-bottom: 20px;"><a href="#!user"><img style="height: 35px;" src="{{asset('img/logo.svg')}}"></a></li>
     <li>
-        <a class="roboto @if (request()->segment(1) == 'org_chart') accent-color-2 active-back @else grey-text text-darken-3 @endif"
+        <a class="roboto waves-effect waves-accent @if (request()->segment(1) == 'org_chart') accent-color-2 active-back @else grey-text text-darken-3 @endif"
            href="{{url('/org_chart')}}" style="font-size: 15px;"><img
                 src="@if (request()->segment(1) == 'org_chart') {{asset('img/org_chart_oranged.svg')}} @else {{asset('img/org_chart.svg')}} @endif"
                 class="material-icons" style="height: 20px;margin: 0 20px 0 0;"
                 alt=""> Org.Chart</a></li>
     <li>
-        <a class="roboto @if (request()->segment(1) == 'family_tree') accent-color-2 active-back @else grey-text text-darken-3 @endif"
+        <a class="roboto waves-effect waves-accent @if (request()->segment(1) == 'family_tree') accent-color-2 active-back @else grey-text text-darken-3 @endif"
            href="{{url('/family_tree')}}" style="font-size: 15px;"><img
                 src="@if (request()->segment(1) == 'family_tree') {{asset('img/family_chart_oranged.svg')}} @else {{asset('img/family_chart.svg')}} @endif"
                 class="material-icons" style="height: 20px;margin: 0 20px 0 0;"
                 alt=""> Family Tree</a></li>
     <li>
-        <a class="roboto @if (request()->segment(1) == 'position_view') accent-color-2 active-back @else grey-text text-darken-3 @endif"
+        <a class="roboto waves-effect waves-accent @if (request()->segment(1) == 'position_view') accent-color-2 active-back @else grey-text text-darken-3 @endif"
            href="#!" style="font-size: 15px;"><img
                 src="@if (request()->segment(1) == 'position_view') {{asset('img/position_view_oranged.svg')}} @else {{asset('img/position_view.svg')}} @endif"
                 class="material-icons" style="height: 20px;margin: 0 20px 0 0;"
                 alt=""> Position View</a></li>
     <li>
-        <a class="roboto @if (request()->segment(1) == 'talent_search') accent-color-2 active-back @else grey-text text-darken-3 @endif"
+        <a class="roboto waves-effect waves-accent @if (request()->segment(1) == 'talent_search') accent-color-2 active-back @else grey-text text-darken-3 @endif"
            href="#!" style="font-size: 15px;"><img
                 src="@if (request()->segment(1) == 'talent_serach') {{asset('img/talent_search_oranged.svg')}} @else {{asset('img/talent_search.svg')}} @endif"
                 class="material-icons" style="height: 20px;margin: 0 20px 0 0;"
                 alt=""> Talent Search</a></li>
     <li>
-        <a class="roboto @if (request()->segment(1) == 'talent_pool') accent-color-2 active-back @else grey-text text-darken-3 @endif"
+        <a class="roboto waves-effect waves-accent @if (request()->segment(1) == 'talent_pool') accent-color-2 active-back @else grey-text text-darken-3 @endif"
            href="#!" style="font-size: 15px;"><img
                 src="@if (request()->segment(1) == 'talent_pool') {{asset('img/talent_pool_oranged.svg')}} @else {{asset('img/talent_pool.svg')}} @endif"
                 class="material-icons" style="height: 20px;margin: 0 20px 0 0;"
                 alt=""> Talent Pool</a></li>
     <li>
-        <a class="roboto @if (request()->segment(1) == '9_box') accent-color-2 active-back @else grey-text text-darken-3 @endif"
-           href="#!" style="font-size: 15px;"><img
+        <a class="roboto waves-effect waves-accent @if (request()->segment(1) == '9_box') accent-color-2 active-back @else grey-text text-darken-3 @endif"
+           href="{{url('/9_box')}}" style="font-size: 15px;"><img
                 src="@if (request()->segment(1) == '9_box') {{asset('img/9_box_oranged.svg')}} @else {{asset('img/9_box.svg')}} @endif"
                 class="material-icons" style="height: 20px;margin: 0 20px 0 0;" alt="">
             9 Box</a></li>
     <li>
-        <a class="roboto @if (request()->segment(1) == 'report') accent-color-2 active-back @else grey-text text-darken-3 @endif"
+        <a class="roboto waves-effect waves-accent @if (request()->segment(1) == 'report') accent-color-2 active-back @else grey-text text-darken-3 @endif"
            href="#!" style="font-size: 15px;"><img
                 src="@if (request()->segment(1) == 'report') {{asset('img/report_oranged.svg')}} @else {{asset('img/report.svg')}} @endif"
                 class="material-icons" style="height: 20px;margin: 0 20px 0 0;"

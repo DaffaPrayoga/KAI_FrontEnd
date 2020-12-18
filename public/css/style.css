@@ -1954,3 +1954,13 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     background-color: #eee;
     border-color: transparent;
 }
+
+.nine-box-dots {
+    width: 13px;height: 13px;
+    border-radius: 13px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+

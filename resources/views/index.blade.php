@@ -66,7 +66,7 @@
                 <div class="card-content">
                     <div class="container">
                         <div class="center">
-                            <img src="{{asset('img/logo.svg')}}" style="height: 35px;margin-top: 30px" alt="">
+                            <img src="{{asset('img/logo.svg')}}" style="height: 50px;margin-top: 30px" alt="">
                         </div>
                         <p class="grey-text text-darken-4 center roboto-bold"
                            style="letter-spacing: 1px;font-size: 20px;margin-top: 20px;">
