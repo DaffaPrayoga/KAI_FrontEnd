@@ -28,29 +28,45 @@
                 </div>
                 <div class="col l6 m6 s12">
                     <div class="row">
-                        <div class="col l8 m8 s12"></div>
-                        <div class="col l4 m4 s12">
+                        <div class="col l4 m4 s12"></div>
+                        <div class="col l8 m8 s12">
                             <div class="card z-depth-0" style="border-radius: 8px;">
                                 <div class="card-content" style="padding-top: 15px;padding-bottom: 15px;">
                                     <div class="row" style="margin-bottom: 0px;">
-                                        <div class="col s6">
-                                            <a href="#filter_detail" class="tooltipped modal-trigger"
-                                               data-position="bottom" data-delay="50"
-                                               data-tooltip="Filter this"
-                                               style="display: inline;">
-                                                <img src="{{asset('img/filter.svg')}}" class="center-block"
-                                                     style="height: 20px" alt="">
-                                            </a>
+                                        <div class="col l8 m8 s8">
+                                            <div class="switch">
+                                                <label>
+                                                    Internal
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>
+                                                    External
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div class="col s6">
-                                            <a href="#eye_modal" class="tooltipped modal-trigger" data-position="bottom"
-                                               data-delay="50" data-tooltip="Display"
-                                               style="display: inline;">
-                                                <img src="{{asset('img/eye.svg')}}" class="center-block"
-                                                     style="height: 20px" alt="">
-                                            </a>
+                                        <div class="col l4 m4 s4">
+                                            <div class="row" style="margin-bottom: 0px;">
+                                                <div class="col s6">
+                                                    <a href="#filter_detail" class="tooltipped modal-trigger"
+                                                       data-position="bottom" data-delay="50"
+                                                       data-tooltip="Filter this"
+                                                       style="display: inline;">
+                                                        <img src="{{asset('img/filter.svg')}}" class="center-block"
+                                                             style="height: 20px" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="col s6">
+                                                    <a href="#eye_modal" class="tooltipped modal-trigger"
+                                                       data-position="bottom"
+                                                       data-delay="50" data-tooltip="Display"
+                                                       style="display: inline;">
+                                                        <img src="{{asset('img/eye.svg')}}" class="center-block"
+                                                             style="height: 20px" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -62,7 +78,7 @@
                     <div class="col s12">
                         <div class="card z-depth-0" style="border-radius: 8px;margin-right: 10px;">
                             <div class="card-content" style="padding-left: 10px;padding-right: 2px;">
-                                <p class="roboto-bold grey-text text-darken-4 center"
+                                <p class="roboto-bold accent-color-2 center"
                                    style="font-size: 17px;margin-top: 0px;margin-bottom: 0px;letter-spacing: 0.5px;">
                                     Performance
                                 </p>
@@ -71,31 +87,82 @@
                                     <div class="col l11 m10 s10">
                                         <div class="row" style="margin-bottom: 0px;">
                                             <div class="col l4 m4 s4">
-                                                <p class="grey-text center"
+                                                <p class="grey-text text-darken-3 roboto-bold center"
                                                    style="font-size: 13px;position: relative;top: 4px;margin-bottom: 20px;">
                                                     LOW
                                                 </p>
+                                                <div class="row" style="margin-bottom: 0px;">
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text roboto-bold text-darken-3"
+                                                           style="font-size: 11px;margin-bottom: 0px;">0</p>
+                                                    </div>
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text"
+                                                           style="font-size: 11px;margin-bottom: 0px;">24</p>
+                                                    </div>
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text"
+                                                           style="font-size: 11px;margin-bottom: 0px;">48</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col l4 m4 s4">
-                                                <p class="grey-text center"
+                                                <p class="grey-text text-darken-3 roboto-bold center"
                                                    style="font-size: 13px;position: relative;top: 4px;margin-bottom: 20px;">
                                                     MEDIUM
                                                 </p>
+                                                <div class="row" style="margin-bottom: 0px;">
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text roboto-bold text-darken-3"
+                                                           style="font-size: 11px;margin-bottom: 0px;">70</p>
+                                                    </div>
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text"
+                                                           style="font-size: 11px;margin-bottom: 0px;">77</p>
+                                                    </div>
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text"
+                                                           style="font-size: 11px;margin-bottom: 0px;">84</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col l4 m4 s4">
-                                                <p class="grey-text center"
+                                                <p class="grey-text text-darken-3 roboto-bold center"
                                                    style="font-size: 13px;position: relative;top: 4px;margin-bottom: 20px;">
                                                     HIGH
                                                 </p>
+                                                <div class="row" style="margin-bottom: 0px;">
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text roboto-bold text-darken-3"
+                                                           style="font-size: 11px;margin-bottom: 0px;">90</p>
+                                                    </div>
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text"
+                                                           style="font-size: 11px;margin-bottom: 0px;">93</p>
+                                                    </div>
+                                                    <div class="col l4 m4 s12"
+                                                         style="border-bottom: 1px solid #ddd;padding: 0;">
+                                                        <p class="grey-text"
+                                                           style="font-size: 11px;margin-bottom: 0px;">96</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row" style="margin-top: 0px;margin-bottom: 0px;">
                                     <div class="col l1 m2 s2 b-9-box">
-                                        <p class="grey-text right"
+                                        <p class="grey-text text-darken-3 roboto-bold right"
                                            style="font-size: 13px;position: relative;top: 4px;margin-bottom: 20px;transform: rotate(-90deg);vertical-align: center;line-height: 160px;">
-                                            LOW
+                                            HIGH
                                         </p>
                                     </div>
                                     <div class="col l11 m10 s10">
@@ -103,18 +170,33 @@
                                             <div class="col l4 m4 s4">
                                                 <div class="card z-depth-0 deep-purple lighten-5"
                                                      style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
                                                             Sleeping Tiger • 3 (3.15%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger deep-purple center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger deep-purple center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger deep-purple center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger deep-purple center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger deep-purple center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger deep-purple center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -122,72 +204,101 @@
                                             <div class="col l4 m4 s4">
                                                 <div class="card z-depth-0 orange lighten-5"
                                                      style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px;">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
                                                             Promotable • 13 (13.6%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col l4 m4 s4">
                                                 <div class="card z-depth-0 green lighten-5" style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px;">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
                                                             Top Talent • 9 (9.5%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger green center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger green center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
+                                                        s
                                                     </div>
                                                 </div>
                                             </div>
@@ -196,9 +307,9 @@
                                 </div>
                                 <div class="row" style="margin-top: 0px;margin-bottom: 0px;">
                                     <div class="col l1 m2 s2 b-9-box">
-                                        <p class="grey-text right"
+                                        <p class="grey-text text-darken-3 roboto-bold right"
                                            style="font-size: 13px;position: relative;top: 20px;margin-bottom: 20px;transform: rotate(-90deg);vertical-align: center;line-height: 160px">
-                                            <span class="roboto-bold grey-text text-darken-4 center"
+                                            <span class="roboto-bold accent-color-2 center"
                                                   style="font-size: 17px;margin-top: 0px;margin-bottom: 10px;position: absolute;top: -30px;">Capacity</span>
                                             MEDIUM
                                         </p>
@@ -208,18 +319,33 @@
                                             <div class="col l4 m4 s4">
                                                 <div class="card z-depth-0 deep-purple lighten-5"
                                                      style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
                                                             Sleeping Tiger • 3 (3.15%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger deep-purple center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger deep-purple center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger deep-purple center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger deep-purple center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger deep-purple center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger deep-purple center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -227,40 +353,54 @@
                                             <div class="col l4 m4 s4">
                                                 <div class="card z-depth-0 orange lighten-5"
                                                      style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px;">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
                                                             Promotable • 13 (13.6%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -268,31 +408,54 @@
                                             <div class="col l4 m4 s4">
                                                 <div class="card z-depth-0 orange lighten-5"
                                                      style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px;">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
-                                                            Top Talent • 9 (9.5%)
+                                                            Promotable • 13 (13.6%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger orange center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger orange center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -302,9 +465,9 @@
                                 </div>
                                 <div class="row" style="margin-top: 0px;margin-bottom: 0px;">
                                     <div class="col l1 m2 s2 b-9-box">
-                                        <p class="grey-text right"
+                                        <p class="grey-text text-darken-3 roboto-bold right"
                                            style="font-size: 13px;position: relative;top: 4px;margin-bottom: 20px;transform: rotate(-90deg);vertical-align: center;line-height: 160px;">
-                                            HIGH
+                                            LOW
                                         </p>
                                     </div>
                                     <div class="col l11 m10 s10">
@@ -312,18 +475,39 @@
                                             <div class="col l4 m4 s4">
                                                 <div class="card z-depth-0 red lighten-5"
                                                      style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
-                                                            Sleeping Tiger • 3 (3.15%)
+                                                            Unfit • 13 (13.6%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger red center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger red center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger red center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger red center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger red center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger red center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger red center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger red center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger red center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -331,71 +515,91 @@
                                             <div class="col l4 m4 s4">
                                                 <div class="card z-depth-0 blue lighten-5"
                                                      style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px;">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
-                                                            Promotable • 13 (13.6%)
+                                                            Solid Contributor • 13 (13.6%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col l4 m4 s4">
-                                                <div class="card z-depth-0 blue lighten-5" style="border-radius: 8px;">
-                                                    <div class="card-content b-9-box" style="padding-top: 10px;">
+                                                <div class="card z-depth-0 blue lighten-5"
+                                                     style="border-radius: 8px;">
+                                                    <div class="card-content b-9-box"
+                                                         style="padding-top: 10px;padding-left: 3px;padding-right: 3px;padding-bottom: 20px;">
                                                         <p class="roboto-bold grey-text text-darken-4 center"
                                                            style="font-size: 13px;margin-top: 5px;margin-bottom: 0px;letter-spacing: 0.5px;">
-                                                            Top Talent • 9 (9.5%)
+                                                            Solid Contributor • 13 (13.6%)
                                                         </p>
-                                                        <div class="center" style="padding-top: 30px;">
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <br>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
-                                                            <a href="#promotable_modal"
-                                                               class="modal-trigger blue center-block nine-box-dots"></a>
+                                                        <div class="row" style="padding-top: 20px;margin-bottom: 0px;">
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12"
+                                                                 style="border-right: 1px solid #ddd">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l4 m4 s12">
+                                                                <div class="center b-9-line" style="padding-top: 30px;">
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                    <a href="#promotable_modal"
+                                                                       class="modal-trigger blue center-block nine-box-dots"></a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -842,6 +1046,7 @@
 @section('js_custom')
     <script type="text/javascript">
         $('.b-9-box').matchHeight();
+        $('.b-9-line').matchHeight();
         $(document).ready(function () {
             $('select').material_select();
         });

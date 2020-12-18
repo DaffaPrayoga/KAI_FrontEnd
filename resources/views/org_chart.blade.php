@@ -45,24 +45,29 @@
                         <div class="col l8 m8 s12">
                             <div class="card z-depth-0" style="border-radius: 8px;">
                                 <div class="card-content" style="padding-top: 15px;padding-bottom: 10px;">
-                                    <a href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Zoom In" style="display: inline">
+                                    <a href="#" class="tooltipped" data-position="bottom" data-delay="50"
+                                       data-tooltip="Zoom In" style="display: inline">
                                         <img src="{{asset('img/zoom_in.svg')}}" style="height: 20px" alt="">
                                     </a>
                                     <span class="grey-text text-darken-1"
                                           style="display: inline;font-size: 14px;left: 8px;right: 10px;position:relative;top: -5px">100%</span>
-                                    <a href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Zoom Out"
+                                    <a href="#" class="tooltipped" data-position="bottom" data-delay="50"
+                                       data-tooltip="Zoom Out"
                                        style="display: inline;margin-left: 13px;padding-right: 15px;border-right: 1px solid #ddd;">
                                         <img src="{{asset('img/zoom_out.svg')}}" style="height: 20px" alt="">
                                     </a>
-                                    <a href="#eye_modal" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Display"
+                                    <a href="#eye_modal" class="modal-trigger tooltipped" data-position="bottom"
+                                       data-delay="50" data-tooltip="Display"
                                        style="display: inline;padding-left: 20px">
                                         <img src="{{asset('img/eye.svg')}}" style="height: 20px" alt="">
                                     </a>
-                                    <a href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Fullscreen"
+                                    <a href="#" class="tooltipped" data-position="bottom" data-delay="50"
+                                       data-tooltip="Fullscreen"
                                        style="display: inline;margin-left: 13px;padding-right: 20px;border-right: 1px solid #ddd;">
                                         <img src="{{asset('img/fullscreen.svg')}}" style="height: 20px" alt="">
                                     </a>
-                                    <a href="#info_modal" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Info"
+                                    <a href="#info_modal" class="modal-trigger tooltipped" data-position="bottom"
+                                       data-delay="50" data-tooltip="Info"
                                        style="display: inline;margin-left: 20px;">
                                         <img src="{{asset('img/info.svg')}}" style="height: 20px" alt="">
                                     </a>
@@ -98,7 +103,7 @@
                                      style="border-radius: 8px;padding-top: 0px;padding-left: 20px;padding-right: 20px">
                                     <div class="divider" style="margin-bottom: 20px"></div>
                                     <ul class="collection">
-                                        <a href="#eye_modal" class="modal-trigger">
+                                        <a href="#person_modal" class="modal-trigger">
                                             <li class="collection-item avatar" style="border-bottom: 0px;">
                                                 <img src="{{asset('img/user.svg')}}" alt="" class="circle">
                                                 <span class="title roboto grey-text text-darken-3">Gretchen Torff</span><br>
@@ -124,7 +129,7 @@
                                                      style="height: 18px" alt="">
                                             </span>
                                                 </div>
-                                                <a href="#eye_modal" class="secondary-content modal-trigger"><i
+                                                <a href="#person_modal" class="secondary-content modal-trigger"><i
                                                         class="material-icons accent-color-2"
                                                         style="position:absolute;right: 10px;margin-top: 10px">keyboard_arrow_right</i></a>
                                             </li>
@@ -798,6 +803,48 @@
                     <a href="#!"
                        class="modal-action modal-close waves-effect waves-light white-text btn accent-color-background-2 z-depth-0"
                        style="border: 1px solid #F26923;border-radius: 8px;font-size: 14px;transform: scale(0.9)">OK</a>
+                </div>
+            </div>
+            <div id="person_modal" class="modal z-depth-12 popup-large"
+                 style="border-radius: 10px;">
+                <div class="modal-content" style="padding-left: 15px;padding-right: 15px;">
+                    <h4 class="roboto-bold grey-text text-darken-4" style="font-size: 17px;margin-bottom: 30px">
+                        VP Human Capital
+                    </h4>
+                    <a href="#" class="btn-floating modal-action modal-close z-depth-0"
+                       style="background-color: #eee;top: 5px;position: absolute;right: 10px;transform: scale(0.9)"><i
+                            class="material-icons grey-text text-darken-3">close</i></a>
+                    <p class="grey-text text-darken-1 roboto" style="font-size: 14px;margin-top: -25px">Code:
+                        38819277</p>
+                    <div class="row">
+                        <div class="col l4 m4 s12" style="border-right: 1px solid #ddd;">
+                            <div class="row">
+                                <div class="col l7 m7 s12">
+                                    <h4 class="roboto-bold grey-text text-darken-4" style="font-size: 15px;margin-bottom: 30px;margin-left: -20px;position:relative;top: 8px;">
+                                        Successor List
+                                    </h4>
+                                </div>
+                                <div class="col l5 m5 s12">
+                                    <a href="#!"
+                                       class="waves-effect waves-accent white btn accent-color-2 z-depth-0 right"
+                                       style="border: 1px solid #F26923;border-radius: 8px;font-size: 14px;transform: scale(0.9);padding-left: 15px;padding-right: 15px;"><i
+                                            class="material-icons accent-color-2 fas fa-plus-circle left"></i> ADD</a>
+                                </div>
+                                <div class="col l6 m6 s12" style="margin-top: 20px;padding-bottom: 5px;border-bottom: 3px solid #f26923">
+                                    <h4 class="roboto-bold grey-text text-darken-4 center" style="font-size: 13px;">
+                                        Internal
+                                    </h4>
+                                </div>
+                                <div class="col l6 m6 s12" style="margin-top: 20px;padding-bottom: 5px;">
+                                    <h4 class="roboto-bold grey-text text-darken-4 center" style="font-size: 13px;">
+                                        External
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s12"></div>
+                        <div class="col l4 m4 s12"></div>
+                    </div>
                 </div>
             </div>
         </div>

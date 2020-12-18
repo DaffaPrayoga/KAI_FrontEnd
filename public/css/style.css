@@ -1366,6 +1366,12 @@ span.badge.new.badge-mail-replied:after {
     width: 75%;
 }
 
+.popup-super-large {
+    border-radius: 10px;
+    max-height: 80%;
+    width: 85%;
+}
+
 @media only screen and (max-width: 1200px) {
     .popup-super-mini {
         width: 45%;
@@ -1470,15 +1476,15 @@ span.badge.new.badge-mail-replied:after {
 }
 
 .switch label input[type=checkbox]:checked + .lever {
-    background-color: rgba(120, 153, 4, 0.7);
+    background-color: rgba(242, 105, 35, 0.7);
 }
 
 .switch label input[type=checkbox]:checked + .lever:after {
-    background-color: rgba(120, 153, 4, 1);
+    background-color: rgba(242, 105, 35, 1);
 }
 
 .switch label input[type=checkbox][disabled] + .lever:after, .switch label input[type=checkbox][disabled]:checked + .lever:after {
-    background-color: rgba(120, 153, 4, 1);
+    background-color: rgba(242, 105, 35, 1);
 }
 
 .firebaseui-card-footer {
@@ -1956,8 +1962,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 
 .nine-box-dots {
-    width: 13px;height: 13px;
-    border-radius: 13px;
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
