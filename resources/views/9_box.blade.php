@@ -59,7 +59,7 @@
                                                        data-position="bottom"
                                                        data-delay="50" data-tooltip="Display"
                                                        style="display: inline;">
-                                                        <img src="{{asset('img/eye.svg')}}" class="center-block"
+                                                        <img src="{{asset('img/settings.svg')}}" class="center-block"
                                                              style="height: 20px" alt="">
                                                     </a>
                                                 </div>
@@ -750,104 +750,119 @@
                         PROFILE</a>
                 </div>
             </div>
-            <div id="eye_modal" class="modal z-depth-12 popup-super-mini modal-fixed-footer"
+            <div id="eye_modal" class="modal z-depth-12 popup-mini modal-fixed-footer"
                  style="border-radius: 10px;">
                 <div class="modal-content">
-                    <h4 class="roboto-bold grey-text text-darken-4" style="font-size: 20px;margin-bottom: 30px">Display
-                        Info on Card</h4>
-                    <div class="setting-item">
+                    <h4 class="roboto-bold grey-text text-darken-4" style="font-size: 20px;margin-bottom: 30px">
+                        Setting</h4>
+                    <p class="grey-text text-darken-3 roboto"
+                       style="font-size: 15px;margin-top: 0px;margin-bottom: 10px;letter-spacing: 0.5px">Performance
+                        Standard</p>
+                    <p class="grey-text roboto"
+                       style="font-size: 14px;margin-top: -5px;margin-bottom: 0px;letter-spacing: 0.5px">
+                        You can edit this number to edit performance parameter </p>
+                    <div class="detail-item" style="padding-bottom: 10px;padding-top: 20px;">
+                        <p class="grey-text text-darken-3 roboto"
+                           style="font-size: 14px;margin-top: 0px;margin-bottom: 10px;letter-spacing: 0.5px">LOW</p>
+                        <p class="grey-text roboto"
+                           style="font-size: 12px;margin-top: -5px;margin-bottom: 10px;letter-spacing: 0.5px">
+                            Sleeping tiger 1, sleeping tiger 2, and unfit is here</p>
                         <div class="row" style="margin-bottom: 0px">
-                            <div class="col s10">
-                                <img src="{{asset('img/user.svg')}}"
-                                     style="height: 25px;display: inline;margin-right: 15px;margin-top: 10px" alt="">
-                                <span class="grey-text text-darken-1"
-                                      style="font-size: 15px;top: -5px;position: relative;">Profile Picture</span>
+                            <div class="input-field col s3">
+                                <label for="min" class="grey-text text-darken-1" style="font-size: 12px;">Min</label>
+                                <input id="min" type="number" placeholder="Min" value="0"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
-                            <div class="col s2">
-                                <p style="margin-bottom: 0px;margin-top: 15px;">
-                                    <input type="checkbox" class="filled-in" checked id="test7"/>
-                                    <label for="test7"></label>
-                                </p>
+                            <div class="input-field col s3">
+                                <label for="mid_1" class="grey-text text-darken-1" style="font-size: 12px;">Mid
+                                    1</label>
+                                <input id="mid_1" type="number" placeholder="Mid 1" value="24"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
-                        </div>
-                    </div>
-                    <div class="setting-item">
-                        <div class="row" style="margin-bottom: 0px;">
-                            <div class="col s10">
-                                <img src="{{asset('img/Talent_Card/Impact_of_Loss/Black.svg')}}"
-                                     style="height: 25px;display: inline;margin-right: 15px;margin-top: 10px" alt="">
-                                <span class="grey-text text-darken-1"
-                                      style="font-size: 15px;top: -5px;position: relative;">Impact of Loss</span>
+                            <div class="input-field col s3">
+                                <label for="mid_2" class="grey-text text-darken-1" style="font-size: 12px;">Mid
+                                    2</label>
+                                <input id="mid_2" type="number" placeholder="Mid 2" value="48"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
-                            <div class="col s2">
-                                <p style="margin-bottom: 0px;margin-top: 15px;">
-                                    <input type="checkbox" class="filled-in" checked id="test8"/>
-                                    <label for="test8"></label>
-                                </p>
+                            <div class="input-field col s3">
+                                <label for="max" class="grey-text text-darken-1" style="font-size: 12px;">Max</label>
+                                <input id="max" type="number" placeholder="Max" value="69"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
                         </div>
                     </div>
-                    <div class="setting-item" style="margin-bottom: 10px">
-                        <div class="row" style="margin-bottom: 0px;">
-                            <div class="col s10">
-                                <img src="{{asset('img/Talent_Card/Risk_of_Loss/Black.svg')}}"
-                                     style="height: 25px;display: inline;margin-right: 15px;margin-top: 10px" alt="">
-                                <span class="grey-text text-darken-1"
-                                      style="font-size: 15px;top: -5px;position: relative;">Risk of Loss</span>
+                    <div class="detail-item" style="padding-bottom: 10px;">
+                        <p class="grey-text text-darken-3 roboto"
+                           style="font-size: 14px;margin-top: 0px;margin-bottom: 10px;letter-spacing: 0.5px">MEDIUM</p>
+                        <p class="grey-text roboto"
+                           style="font-size: 12px;margin-top: -5px;margin-bottom: 10px;letter-spacing: 0.5px">
+                            Promotable 1, promotable 3, and solid contributor 2 is here</p>
+                        <div class="row" style="margin-bottom: 0px">
+                            <div class="input-field col s3">
+                                <label for="min" class="grey-text text-darken-1" style="font-size: 12px;">Min</label>
+                                <input id="min" type="number" placeholder="Min" value="70"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
-                            <div class="col s2">
-                                <p style="margin-bottom: 0px;margin-top: 15px;">
-                                    <input type="checkbox" class="filled-in" checked id="test3"/>
-                                    <label for="test3"></label>
-                                </p>
+                            <div class="input-field col s3">
+                                <label for="mid_1" class="grey-text text-darken-1" style="font-size: 12px;">Mid
+                                    1</label>
+                                <input id="mid_1" type="number" placeholder="Mid 1" value="77"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
-                        </div>
-                    </div>
-                    <div class="setting-item" style="margin-bottom: 10px">
-                        <div class="row" style="margin-bottom: 0px;">
-                            <div class="col s10">
-                                <img src="{{asset('img/Talent_Card/Health_Indicator/Black.svg')}}"
-                                     style="height: 25px;display: inline;margin-right: 15px;margin-top: 10px" alt="">
-                                <span class="grey-text text-darken-1"
-                                      style="font-size: 15px;top: -5px;position: relative;">Health Indicator</span>
+                            <div class="input-field col s3">
+                                <label for="mid_2" class="grey-text text-darken-1" style="font-size: 12px;">Mid
+                                    2</label>
+                                <input id="mid_2" type="number" placeholder="Mid 2" value="84"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
-                            <div class="col s2">
-                                <p style="margin-bottom: 0px;margin-top: 15px;">
-                                    <input type="checkbox" class="filled-in" checked id="test4"/>
-                                    <label for="test4"></label>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="setting-item" style="margin-bottom: 10px">
-                        <div class="row" style="margin-bottom: 0px;">
-                            <div class="col s10">
-                                <img src="{{asset('img/Talent_Card/Gender/Black/Female.svg')}}"
-                                     style="height: 25px;display: inline;margin-right: 15px;margin-top: 10px" alt="">
-                                <span class="grey-text text-darken-1"
-                                      style="font-size: 15px;top: -5px;position: relative;">Gender</span>
-                            </div>
-                            <div class="col s2">
-                                <p style="margin-bottom: 0px;margin-top: 15px;">
-                                    <input type="checkbox" class="filled-in" checked id="test5"/>
-                                    <label for="test5"></label>
-                                </p>
+                            <div class="input-field col s3">
+                                <label for="max" class="grey-text text-darken-1" style="font-size: 12px;">Max</label>
+                                <input id="max" type="number" placeholder="Max" value="89"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
                         </div>
                     </div>
-                    <div class="setting-item" style="margin-bottom: 10px">
-                        <div class="row" style="margin-bottom: 0px;">
-                            <div class="col s10">
-                                <img src="{{asset('img/Talent_Card/Discipline/Black.svg')}}"
-                                     style="height: 25px;display: inline;margin-right: 15px;margin-top: 10px" alt="">
-                                <span class="grey-text text-darken-1"
-                                      style="font-size: 15px;top: -5px;position: relative;">Indiscipline Flag</span>
+                    <div class="detail-item" style="padding-bottom: 10px;">
+                        <p class="grey-text text-darken-3 roboto"
+                           style="font-size: 14px;margin-top: 0px;margin-bottom: 10px;letter-spacing: 0.5px">HIGH</p>
+                        <p class="grey-text roboto"
+                           style="font-size: 12px;margin-top: -5px;margin-bottom: 10px;letter-spacing: 0.5px">
+                            Top talent, promotable 2, and solid contributor 1 is here</p>
+                        <div class="row" style="margin-bottom: 0px">
+                            <div class="input-field col s3">
+                                <label for="min" class="grey-text text-darken-1" style="font-size: 12px;">Min</label>
+                                <input id="min" type="number" placeholder="Min" value="90"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
-                            <div class="col s2">
-                                <p style="margin-bottom: 0px;margin-top: 15px;">
-                                    <input type="checkbox" class="filled-in" checked id="test6"/>
-                                    <label for="test6"></label>
-                                </p>
+                            <div class="input-field col s3">
+                                <label for="mid_1" class="grey-text text-darken-1" style="font-size: 12px;">Mid
+                                    1</label>
+                                <input id="mid_1" type="number" placeholder="Mid 1" value="93"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
+                            </div>
+                            <div class="input-field col s3">
+                                <label for="mid_2" class="grey-text text-darken-1" style="font-size: 12px;">Mid
+                                    2</label>
+                                <input id="mid_2" type="number" placeholder="Mid 2" value="96"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
+                            </div>
+                            <div class="input-field col s3">
+                                <label for="max" class="grey-text text-darken-1" style="font-size: 12px;">Max</label>
+                                <input id="max" type="number" placeholder="Max" value="100"
+                                       class="validate"
+                                       style="border:1px solid #ddd;font-size: 15px;border-radius: 8px;padding-left: 5%;width: 95%;margin-top: 5px;">
                             </div>
                         </div>
                     </div>

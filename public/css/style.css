@@ -1388,6 +1388,14 @@ span.badge.new.badge-mail-replied:after {
     .popup-medium {
         width: 60%;
     }
+
+    .popup-large {
+        width: 90%;
+    }
+
+    .popup-super-large {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1408,6 +1416,10 @@ span.badge.new.badge-mail-replied:after {
     }
 
     .popup-large {
+        width: 90%;
+    }
+
+    .popup-super-large {
         width: 90%;
     }
 }
@@ -1455,16 +1467,16 @@ span.badge.new.badge-mail-replied:after {
 }
 
 .tabs .indicator {
-    background-color: #789904 !important;
+    background-color: #f26923 !important;
 }
 
 .tabs .tab a {
-    color: rgba(130, 69, 41, 0.7) !important;
+    color: rgba(0, 0, 0, 0.6) !important;
     text-transform: capitalize !important;
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-    color: #789904 !important;
+    color: #f26923 !important;
 }
 
 .add-photo-border {
@@ -1490,6 +1502,7 @@ span.badge.new.badge-mail-replied:after {
 .firebaseui-card-footer {
     padding: 0px 24px;
     padding-bottom: 40px;
+}
 }
 
 .mdl-button--raised.mdl-button--colored {
